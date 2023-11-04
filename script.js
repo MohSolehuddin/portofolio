@@ -1,3 +1,16 @@
+// loading function
+// Untuk menampilkan loading
+function showLoading() {
+  const loading = document.getElementById('loading');
+  loading.removeAttribute('hidden');
+}
+
+// Untuk menyembunyikan loading
+function hideLoading() {
+  const loading = document.getElementById('loading');
+  loading.setAttribute("hidden", "true");
+}
+
 function TampilkanSertifikat() {
   let nilai = document.getElementById("OptionKompetensi").value;
   function print(Value, url) {
@@ -81,21 +94,43 @@ function exp(){
 const portofolio = [
   {
     title: "Number Convertion",
-    img: "",
+    img: "property/solehuddin.png",
     link: "https://konversi-angka.vercel.app"
-  }
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "/property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
 ];
 
 function printPortofolio() {
-  let result= `<h3 class="text-center">Portofolio</h3>`;
+  showLoading();
+  let result= `<section class="container-my-card text-center"><h3 class="title-group-card">portofolio</h3>`;
   let output = document.getElementById("output");
   for (let i in portofolio) {
     result+= `
-    <h3>${portofolio[i].title}</h3>
-    
+    <div class="my-card border">
+      <img class="img-card" id="img-card" src="${portofolio[i].img}" alt="img card" />
+      <div class="title-card">
+        <h3>${portofolio[i].title}</h3>
+        <a class="show-portofolio" id="show-portofolio" href="${portofolio[i].link}" target="_blank">show</a>
+      </div>
+    </div>
     `
   }
-  output.innerHTML = result;
+  hideLoading();
+  output.innerHTML = `${result}</section>`;
 }
 
 function printSkill() {

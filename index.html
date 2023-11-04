@@ -48,6 +48,10 @@
     <!-- Akhir Runer AOS -->
   
 </body>
+  <section id="loading" class="loading-container">
+    <div class="loader"></div>
+    <p>Loading...</p>
+  </section>
   <main class="main">
     <!-- Profil -->
     <section id="Profil" class="Profil text-center pt-4" style="color: white;">
@@ -147,6 +151,20 @@
       portfolioButton.classList.remove('active');
       productButton.classList.remove('active');
     });
+    let imgCard = document.querySelectorAll(".img-card");
+    let showPortofolio = document.querySelectorAll(".show-portofolio");
+    
+    /*imgCard.forEach((elemen, index) => {
+      elemen.addEventListener("click", () => {
+        showPortofolio[index].removeAttribute("hidden"); // Menampilkan elemen yang sesuai
+      });
+    });*/
+
+
+    window.onload = function() {
+      // Semua aset telah berhasil diunduh, sembunyikan loading
+      hideLoading();
+    };
     animationScrollReveal(500, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.custom-btn',]);
     exp();
     </script>
