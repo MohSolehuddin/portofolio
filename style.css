@@ -134,7 +134,7 @@ img.start{
 }
 .my-card:hover > .img-card + .title-card{
   transform: translateY(-300px);
-  transition: all .5s cubic-bezier(.1, .5 , .3, .1);
+  transition: all .8s cubic-bezier(.1, 1.5 , .3, 1.5);
 }
 .my-card .title-card .show-portofolio{
   padding: 10px 30px;
@@ -200,12 +200,57 @@ img.start{
 .keterangan{
   font-size: 13px;
 }
-/** Responsive**/
-@media screen and (max-width: 600){
-  
+/* sertifikat */
+.container-sertificats{
+  display: flex;
+  position: relative;
+  bottom: 230px;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw;
 }
-@media screen and (min-width: 600){
-  
+.title-sertificat{
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+.container-sertificats-item{
+  width: 100%;
+  margin: auto;
+}
+.container-img-sertificat{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  height: 400px;
+  gap: 1rem;
+  background-image: linear-gradient(45deg, rgba(0,0,0,.06), rgba(0,0,0,.12));
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.img-sertificat{
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  border-radius: 1rem;
+  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.img-sertificat:hover{
+  flex: 5.35;
+  background-color: rgba(255,255,255);
+}
+
+/** Responsive**/
+@media screen and (max-width: 599px){
+  .container-sertificats{
+    bottom: 100px;
+  }
+}
+@media screen and (min-width: 600px){
+    .container-sertificats{
+    bottom: 150px;
+  }
 }
 @media screen and (min-width: 1000px){
   .container-my-card{
