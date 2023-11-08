@@ -64,7 +64,7 @@
         <div class="margin-custom">
           <img class="rounded-ccircle mb-3 logo d-flex justify-content-center m-auto" src="property/solehuddin.png" alt="profil img" />
           <!-- my name -->
-          <h3 class="my-name"><span class="MOH-SOLEHUDDIN"></span></h3>
+          <h3 class="my-name"><span class="MOH-SOLEHUDDIN" id="my-name"></span></h3>
           <!-- my title -->
           <h6 id="profesi"><span class="im mb-4">I'M </span><span class="typing"></span></h6>
         </div>
@@ -99,41 +99,32 @@
       <!-- tombol untuk setiap tampilan -->
       <section class="btn-group d-flex justify-content-between mt-4">
         <button class="custom-btn p-2" id="portofolioButton" type="submit" onclick="printPortofolio()">Portofolio</button>
-        <button class="custom-btn p-2" id="skillsButton"type="submit" onclick="printSkill()">Skills</button>
+        <button class="custom-btn p-2" id="skillsButton"type="submit" onclick="showSertificat()">Skills</button>
         <button class="custom-btn p-2" id="productButton" type="submit" onclick="printPrduct()">Product</button>
       </section>
     </section>
     <section class="output" id="output" data-aos="fade-down">
     </section>
   </main>
-  <section class="container-sertificats">
-    <h3 class="sertifikat text-center">sertifikat</h3>
-    <div class="container-sertificat-items">
-      <h3 class="title-sertificat">
-        fundamental javascript
-      </h3>
-      <div class="container-img-sertificat">
-        <div class="img-sertificat" style="background-image: url('sertifikat/js/js.webp');"></div>
-        <div class="img-sertificat" style="background-image: url('sertifikat/js/js2.webp');"></div>
-        <div class="img-sertificat" style="background-image: url('sertifikat/js/js3.webp');"></div>
-      </div>
-    </div>
-  </section>
   <!-- Setup library typing -->
   <script>
-  let typed = new Typed('.typing', {
-    strings: ['Front End Web Developer.','Back End Web Developer.','Full Stack Web Developer.','Content Creator.'],
-    delay: 1000,
-    typeSpeed: 60,
-    backSpeed: 30,
-    loop: true,
-  });
-  let mohSolehuddin = new Typed('.MOH-SOLEHUDDIN', {
-  strings: ['MSYTC','MOH. SOLEHUDDIN'],
-  startDelay: 900,
-  typeSpeed: 90,
-  backSpeed: 200,
-  });
+
+    window.onload = function() {
+      setTimeout(function() {
+        let typed = new Typed('.typing', {
+          strings: ['Front End Web Developer.','Back End Web Developer.','Full Stack Web Developer.','Content Creator.'],
+          delay: 1000,
+          typeSpeed: 60,
+          backSpeed: 30,
+          loop: true,
+        });
+        let mohSolehuddin = new Typed('.MOH-SOLEHUDDIN', {
+        strings: ['MSYTC','MOH. SOLEHUDDIN'],
+        startDelay: 900,
+        typeSpeed: 90,
+        backSpeed: 200,
+        });
+      }, 400);
       const portfolioButton = document.getElementById('portofolioButton');
       const productButton = document.getElementById('productButton');
       const skillsButton = document.getElementById('skillsButton');
@@ -171,13 +162,11 @@
       });
     });*/
 
-
-    window.onload = function() {
       // Semua aset telah berhasil diunduh, sembunyikan loading
       hideLoading();
+      exp();
+      animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group',]);
     };
-    animationScrollReveal(500, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.custom-btn',]);
-    exp();
     </script>
 
   </body>
