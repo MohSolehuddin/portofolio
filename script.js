@@ -46,11 +46,21 @@ const portofolio = [
 const sertifikats = {
   items: [
     {
-      title: "JavaScript",
+      title: "HTML",
       img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
+        "sertifikat/html/html.webp",
+        ]
+    },
+    {
+      title: "CSS",
+      img: [
+        "sertifikat/css/css.webp",
+        ]
+    },
+    {
+      title: "Fundamental Python",
+      img: [
+        "sertifikat/py/py.webp",
         ]
     },
     {
@@ -62,69 +72,20 @@ const sertifikats = {
         ]
     },
     {
-      title: "JavaScript",
+      title: "AWS (Amazon Web Service)",
       img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
+        "sertifikat/aws/aws.webp",
+        "sertifikat/aws/aws2.webp",
         ]
     },
     {
-      title: "JavaScript",
+      title: "JavaScript (NodeJS - Back End Dev)",
       img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
+        "sertifikat/BE/BE.webp",
+        "sertifikat/BE/BE2.webp",
         ]
     },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },]
+  ]
 }
 // loading function
 // Untuk menampilkan loading
@@ -146,11 +107,13 @@ function exp(){
     hasilTahun *=12;
     hasilBulan = to.getMonth()+1;
     hasil = Math.floor((hasilTahun-9 + hasilBulan)/12);
-    document.getElementById("exp").innerHTML = `${hasil}+ year`;
+    document.getElementById("exp").innerHTML = `${hasil}+`;
   }
 }
+
 // function untuk memperlihatkan sertifikat
 function showSertificat() {
+  showLoading();
   let result = `<section class="container-sertificats">
     <h3 class="sertifikat text-center">sertifikat</h3>`;
   
@@ -176,9 +139,10 @@ function showSertificat() {
     `;
   });
   result += `</section>`;
-  
+  hideLoading();
   // Pastikan ada elemen dengan ID "OutputSertifikat" di HTML untuk menampilkan hasil
   document.getElementById("output").innerHTML = result;
+  setDynamicBackgroundColor();
 }
 
 function printPortofolio() {
@@ -199,7 +163,9 @@ function printPortofolio() {
   hideLoading();
   output.innerHTML = `${result}</section>`;
 }
+
 function printProduct() {
+  showLoading();
   let result = `<section id="my-product" class="container d-flex justify-content-around">
     <h1 class="text-primary text-center" style="font-family: 'Kdam Thmor Pro', sans-serif;">PRODUK</h1>`;
   let output = document.getElementById("output");
@@ -222,8 +188,10 @@ function printProduct() {
     
     `
   }
+  hideLoading();
   output.innerHTML = `${result}</section>`;
 }
+
 function animationScrollReveal(delayValue, array) {
   const scrollAnimation = ScrollReveal(
     {origin: 'top',
@@ -235,4 +203,15 @@ function animationScrollReveal(delayValue, array) {
     delayValue += 100;
     scrollAnimation.reveal(`${array[i]}`, {delay: delayValue});
   }
+}
+
+// Fungsi untuk menangani warna latar belakang
+function setDynamicBackgroundColor() {
+  const containers = document.querySelectorAll('.container-img-sertificat');
+
+  containers.forEach(container => {
+    if (container.children.length === 1) {
+      container.classList.add('single-item');
+    }
+  });
 }

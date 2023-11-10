@@ -54,17 +54,17 @@
   </section>
   <main class="main">
     <!-- Profil -->
-    <section id="Profil" class="Profil text-center pt-4" style="color: white;">
+    <section id="Profil" class="Profil text-center pt-4">
       <div>
         <!-- blob decoration -->
         <div class="d-flex justify-content-center">
           <img src="icon/blob.svg" alt="blob decoration" class="profil-blob">
         </div>
-        <!-- ,membuat class margin-custom untuk mengatur desain -->
+        <!-- membuat class margin-custom untuk mengatur desain -->
         <div class="margin-custom">
-          <img class="rounded-ccircle mb-3 logo d-flex justify-content-center m-auto" src="property/solehuddin.png" alt="profil img" />
+          <img class="mb-3 logo d-flex justify-content-center m-auto" src="property/solehuddin.png" alt="profil img" />
           <!-- my name -->
-          <h3 class="my-name"><span class="MOH-SOLEHUDDIN" id="my-name"></span></h3>
+          <h1 class="my-name"><span class="MOH-SOLEHUDDIN" id="my-name"></span></h1>
           <!-- my title -->
           <h6 id="profesi"><span class="im mb-4">I'M </span><span class="typing"></span></h6>
         </div>
@@ -79,25 +79,25 @@
         </div>
       </section>
       <!-- tentang saya / about me-->
-      <section class="aboutMe d-flex justify-content-center mb-5">
+      <section class="aboutMe d-flex justify-content-center">
         <!-- Experient -->
         <div class="exp">
-          <h5><strong>Experient</strong></h5>
-          <p><i class="keterangan" id="exp"></i></p>
+          <h5><strong id="exp"></strong></h5>
+          <p class="keterangan" ><i>year experient</i></p>
         </div>
         <!-- Project -->
         <div class="totalProject">
-          <h5><strong>Projects</strong></h5>
-          <p><i class="keterangan" id="complete-project">15 complete project</i></p>
+          <h5><strong id="complete-project"></strong></h5>
+          <p><i class="keterangan">complete project</i></p>
         </div>
         <!-- more -->
         <div class="more">
-          <h5><strong>More</strong></h5>
-          <p><i class="keterangan" id="complete-project"><a href="https://msytc.vercel.app/more/">More About Me</a></i></p>
+          <h5><strong id="countSert"></strong></h5>
+          <p><i class="keterangan">study sertificate</i></p>
         </div>
       </section>
       <!-- tombol untuk setiap tampilan -->
-      <section class="btn-group d-flex justify-content-between mt-4">
+      <section class="btn-group">
         <button class="custom-btn p-2" id="portofolioButton" type="submit" onclick="printPortofolio()">Portofolio</button>
         <button class="custom-btn p-2" id="skillsButton"type="submit" onclick="showSertificat()">Skills</button>
         <button class="custom-btn p-2" id="productButton" type="submit" onclick="printPrduct()">Product</button>
@@ -147,7 +147,17 @@
           delay: 500,}).reveal("my-product", {delay: 100})
       }, 100);
     });
+    
+    const containers = document.querySelectorAll('.container-img-sertificat');
 
+  containers.forEach(container => {
+    container.addEventListener('click', () => {
+      if (container.children.length === 1) {
+        container.style.backgroundColor = 'pink';
+      }
+    });
+  });
+    
     skillsButton.addEventListener('click', () => {
       skillsButton.classList.add('active');
       portfolioButton.classList.remove('active');
@@ -155,17 +165,12 @@
     });
     let imgCard = document.querySelectorAll(".img-card");
     let showPortofolio = document.querySelectorAll(".show-portofolio");
-    
-    /*imgCard.forEach((elemen, index) => {
-      elemen.addEventListener("click", () => {
-        showPortofolio[index].removeAttribute("hidden"); // Menampilkan elemen yang sesuai
-      });
-    });*/
-
       // Semua aset telah berhasil diunduh, sembunyikan loading
-      hideLoading();
-      exp();
       animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group',]);
+      document.getElementById("complete-project").innerHTML = portofolio.length;
+      document.getElementById("countSert").innerHTML = sertifikats.items.length;
+      exp();
+      hideLoading();
     };
     </script>
 
