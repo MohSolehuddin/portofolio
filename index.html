@@ -13,10 +13,6 @@
   <script src="vendor/typed.js"></script>
   <!-- akhir Instalasi cdn framework mengetik -->
 
-  <!-- Instalasi AOS -->
-  <link href="vendor/AOS.css" rel="stylesheet">
-  <!-- Akhir Instalasi AOS -->
-
   <!-- Instalasi Google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro" rel="stylesheet">
   <!-- Akhir Instalasi Google fonts -->
@@ -29,24 +25,12 @@
   <body style="font-family: 'Kdam Thmor Pro', sans-serif;">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <!-- Instalasi bootstrap js -->
-    <script src="vandor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="vandor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- Akhir Instalasi bootstrap js -->
 
     <!-- Instalasi js  pribadi-->
     <script src="script.js" type="text/javascript" charset="utf-8"></script>
     <!-- Akhir Instalasi js  ppribadi-->
-
-    <!-- Runer AOS -->
-  <script src="vendor/AOS.js"></script>
-    <script>
-      AOS.init({
-      delay: 100,
-      duration: 850,
-      once: true
-      });
-    </script>
-    <!-- Akhir Runer AOS -->
-  
 </body>
   <section id="loading" class="loading-container">
     <div class="loader"></div>
@@ -98,17 +82,18 @@
       </section>
       <!-- tombol untuk setiap tampilan -->
       <section class="btn-group">
-        <button class="custom-btn p-2" id="portofolioButton" type="submit" onclick="printPortofolio()">Portofolio</button>
-        <button class="custom-btn p-2" id="skillsButton"type="submit" onclick="showSertificat()">Skills</button>
-        <button class="custom-btn p-2" id="productButton" type="submit" onclick="printPrduct()">Product</button>
+        <button class="custom-btn p-2 active" id="portofolioButton" type="submit">Portofolio</button>
+        <button class="custom-btn p-2" id="skillsButton"type="submit">Skills</button>
+        <button class="custom-btn p-2" id="productButton" type="submit">Product</button>
       </section>
     </section>
-    <section class="output" id="output" data-aos="fade-down">
+    <section class="output" id="output">
     </section>
   </main>
   <!-- Setup library typing -->
   <script>
     window.onload = function() {
+      printPortofolio()
       setTimeout(function() {
         let typed = new Typed('.typing', {
           strings: ['Front End Web Developer.','Back End Web Developer.','Full Stack Web Developer.','Content Creator.'],
@@ -131,20 +116,14 @@
       portfolioButton.classList.add('active');
       productButton.classList.remove('active');
       skillsButton.classList.remove('active');
+      printPortofolio();
     });
     
     productButton.addEventListener('click', () => {
       productButton.classList.add('active');
       portfolioButton.classList.remove('active');
       skillsButton.classList.remove('active');
-      setTimeout(async function() {
-        await printProduct();
-        ScrollReveal({
-          origin: 'bottom',
-          distance: '60px',
-          duration: 7000,
-          delay: 500,}).reveal("my-product", {delay: 100})
-      }, 100);
+      printProduct();
     });
     
     const containers = document.querySelectorAll('.container-img-sertificat');
@@ -161,11 +140,12 @@
       skillsButton.classList.add('active');
       portfolioButton.classList.remove('active');
       productButton.classList.remove('active');
+      showSertificat();
     });
     let imgCard = document.querySelectorAll(".img-card");
     let showPortofolio = document.querySelectorAll(".show-portofolio");
       // Semua aset telah berhasil diunduh, sembunyikan loading
-      animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group',]);
+      animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group', '.container-my-card']);
       document.getElementById("complete-project").innerHTML = portofolio.length;
       document.getElementById("countSert").innerHTML = sertifikats.items.length;
       exp();

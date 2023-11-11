@@ -40,25 +40,126 @@ const portofolio = [
     img: "/property/solehuddin.png",
     link: "https://konversi-angka.vercel.app"
   },
+  {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "/property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+  {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "/property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+  {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
+   {
+    title: "Number Convertion",
+    img: "/property/solehuddin.png",
+    link: "https://konversi-angka.vercel.app"
+  },
 ];
 const sertifikats = {
   items: [
     {
-      title: "HTML",
+      title: "HTML - alwaysngoding.com",
       img: [
         "sertifikat/html/html.webp",
         ]
     },
     {
-      title: "CSS",
+      title: "CSS - alwaysngoding.com",
       img: [
         "sertifikat/css/css.webp",
+        ]
+    },
+    {
+      title: "JavaScript - alwaysngoding.com",
+      img: [
+        "sertifikat/jsAlways/js.webp",
+        ]
+    },
+    {
+      title: "PHP - alwaysngoding.com",
+      img: [
+        "sertifikat/php/php.webp",
+        ]
+    },
+    {
+      title: "MySql - alwaysngoding.com",
+      img: [
+        "sertifikat/mysql/mysql.webp",
         ]
     },
     {
       title: "Fundamental Python",
       img: [
         "sertifikat/py/py.webp",
+        ]
+    },
+    {
+      title: "Logika Pemrogramman - dicoding.com",
+      img: [
+        "sertifikat/logikaPemrograman/1.webp",
+        "sertifikat/logikaPemrograman/2.webp",
+        ]
+    },
+    {
+      title: "MySql - dicoding.com",
+      img: [
+        "sertifikat/memulaiDasarPemrograman/1.webp",
+        "sertifikat/memulaiDasarPemrograman/2.webp",
+        "sertifikat/memulaiDasarPemrograman/3.webp",
+        "sertifikat/memulaiDasarPemrograman/4.webp",
+        ]
+    },
+    {
+      title: "Visualisasi Data - dicoding.com",
+      img: [
+        "sertifikat/visualisasiData/1.webp",
+        "sertifikat/visualisasiData/2.webp",
         ]
     },
     {
@@ -204,7 +305,6 @@ function animationScrollReveal(delayValue, array) {
 // Fungsi untuk menangani warna latar belakang
 function setDynamicBackgroundColor() {
   const containers = document.querySelectorAll('.container-img-sertificat');
-
   containers.forEach(container => {
     if (container.children.length === 1) {
       container.classList.add('single-item');

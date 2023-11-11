@@ -1,3 +1,4 @@
+/* variable */
 :root{
   /* color */
   --bc: #7743DB;
@@ -11,6 +12,7 @@
   --big-size: 60px;
   
 }
+/* reset semua element */
 *{
   margin: 0;
   padding: 0;
@@ -23,9 +25,11 @@ h1,h2,h3{
 h4,h5,h6{
   font-size: var(--normal-font-size);
 }
+/* jarak dari konten btn */
 #output{
   margin-top: var(--normal-size);
 }
+/* konfigurasi loading */
 .loading-container{
   display: flex;
   align-items: center;
@@ -67,6 +71,7 @@ body{
  position: relative;
  z-index: 0;
 }
+/* blob decoration */
 .profil-blob{
   transform: rotate(-18deg);
 }
@@ -74,6 +79,7 @@ body{
 #profesi {
   color : var(--sc);
 }
+/* nama pemilik */
 .MOH-SOLEHUDDIN{
   color: var(--bc);
 }
@@ -82,6 +88,7 @@ body{
   width: 90vw;
   margin: auto;
 }
+/* setiap bagian tentang saya */
 .aboutMe div{
   width: 110px;
   background-color: var(--bg-color);
@@ -94,9 +101,11 @@ body{
 .aboutMe .more a{
   color: var(--text-color);
 }
+/* link media sosial */
 .mediaSosial a {
   margin: 0 var(--small-size);
 }
+/* pembungkus kartu */
 .container-my-card{
   margin: auto;
   display: flex;
@@ -106,12 +115,15 @@ body{
   align-items: center; 
   width: 80vw;
 }
+/* judul keseluruhan kartu */
 .title-group-card{
   width: 100%;
 }
+/* judul per kartu */
 .title-card h3 {
   color: var(--bg-color);
 }
+/* item dari pembungkus kartu */
 .my-card {
   position: relative;
   border-radius: 1rem;
@@ -119,12 +131,13 @@ body{
   width: 300px;
   overflow: hidden;
 }
+/* gambar pada kartu */
 .img-card {
   z-index: 1;
   position: relative;
   width: 100%;
 }
-
+/* judul dari kartu */
 .my-card .title-card {
   display: flex;
   flex-direction: column;
@@ -135,12 +148,13 @@ body{
   position: relative;
   z-index: 2;
   background: linear-gradient(170deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,.8));
-  z-index: 3;
 }
+/* efek ketika pembungkus di hover */
 .my-card:hover > .img-card + .title-card{
   transform: translateY(-300px);
   transition: all .8s cubic-bezier(.1, 1.5 , .3, 1.01);
 }
+/* tombol link ke website yang pernah saya buat */
 .my-card .title-card .show-portofolio{
   padding: var(--small-size) var(--large-size);
   border-radius: 1rem;
@@ -163,7 +177,7 @@ body{
 }
 .custom-btn{
   background-color: transparent;
-  border: .001px solid rgba(255,255,255,.1);
+  border: none;
   width: 140px;
   border-radius: 5px;
   height: var(--normal-size);
@@ -176,6 +190,7 @@ body{
 #skillsButton{
   margin: 0 var(--small-size);
 }
+/* jika tombol di tekan */
 .active{
   transition: .3s;
   background-color: var(--bg-color);
@@ -230,8 +245,8 @@ body{
 }
 .container-img-sertificat.single-item{
   margin: auto;
-  width: 78vw;
-  height: 52vw;
+  width: 80vw;
+  height: 53.3334vw;
 }
 .img-sertificat{
   flex: 1;
@@ -262,7 +277,7 @@ body{
   margin-top: var(--large-size);
 }
 .product-item{
-  width: 300px;
+  width: 350px;
   border: .1px solid var(--text-color);
   padding: var(--large-size);
   border-radius: 1rem;
@@ -274,6 +289,7 @@ body{
 }
 .product-item img{
   width: 100%;
+  border-radius: 1rem;
 }
 .product-item a{
   color: var(--bg-color);
@@ -283,6 +299,7 @@ body{
   padding: var(--small-size) var(--large-size);
   border-radius: var(--small-size);
 }
+
 /** Responsive**/
 @media screen and (max-width: 420px){
   :root{
@@ -318,6 +335,30 @@ body{
   .custom-btn{
     width: 33.3%;
   }
+  .product-item{
+    width: 100%;
+  }
+  .container-img-sertificat.single-item{
+  margin: auto;
+  width: 90vw;
+  height: 60vw;
+  }
+  .container-my-card{
+    width: 90vw;
+  }
+  .my-card {
+    width: 90vw;
+    height: 90vw;
+  }
+  .img-card{
+    height: 90vw;
+  }
+  .my-card .title-card {
+    height: 90vw;
+  }
+  .my-card:hover > .img-card + .title-card{
+  transform: translateY(-90vw);
+  }
 }
 @media screen and (min-width: 756px){
   :root{
@@ -330,6 +371,4 @@ body{
       width: 80vw;
   }
 }
-@media screen and (min-width: 992px){
-  
-}
+@media screen and (min-width: 992px){}
