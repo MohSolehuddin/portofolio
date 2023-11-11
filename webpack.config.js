@@ -5,28 +5,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: './script.js', // File masukan script.js
   output: {
-    filename: 'bundle.js',
+    filename: 'index.js', // File keluaran index.js
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles.css',
+      filename: './styles.css',
     }),
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: './index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -38,8 +35,6 @@ module.exports = {
     }),
   ],
   optimization: {
-    minimizer: [
-      new TerserPlugin(),
-    ],
+    minimizer: [new TerserPlugin()],
   },
 };

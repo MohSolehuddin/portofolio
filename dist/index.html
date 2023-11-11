@@ -1,0 +1,59 @@
+<!doctype html><html lang="id"><head><meta charset="UTF-8"><meta http-equiv="refresh" content="text/html;charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"><script src="vendor/typed.js"></script><link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro" rel="stylesheet"><link rel="stylesheet" href="style.css" media="all"><title>Web Portofolio</title><script defer="defer" src="index.js"></script></head><body style="font-family: 'Kdam Thmor Pro', sans-serif;"><script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script><script src="vandor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script><script src="script.js" charset="utf-8"></script></body><section id="loading" class="loading-container"><div class="loader"></div><p>Loading...</p></section><main class="main"><section id="Profil" class="Profil text-center pt-4"><div><div class="d-flex justify-content-center"><img src="icon/blob.svg" alt="blob decoration" class="profil-blob"></div><div class="margin-custom"><img class="mb-3 logo d-flex justify-content-center m-auto" src="property/solehuddin.png" alt="profil img"><h1 class="my-name"><span class="MOH-SOLEHUDDIN" id="my-name"></span></h1><h6 id="profesi"><span class="im mb-4">I'M </span><span class="typing"></span></h6></div></div><section class="mediaSosial text-center d-flex justify-content-center"><div class="medsos"><a class="instagram" href="https://instagram.com/moh.solehuddin001" about="_blank"><img src="./icon/instagram.svg" alt="instagram logo"></a><a class="youtube" href="https://youtube.com/@msytc-code" about="_blank"><img src="./icon/youtube.svg" alt="youtube logo"></a><a class="tiktok" href="https://vm.tiktok.com/ZSNM8ctvS" about="_blank"><img src="./icon/tiktok.svg" alt="tiktok logo"></a><a class="github" href="https://github.com/MohSolehuddin" about="_blank"><img src="./icon/github.svg" alt="github logo"></a></div></section><section class="aboutMe d-flex justify-content-center"><div class="exp"><h5><strong id="exp"></strong></h5><p class="keterangan"><i>year experient</i></p></div><div class="totalProject"><h5><strong id="complete-project"></strong></h5><p><i class="keterangan">complete project</i></p></div><div class="more"><h5><strong id="countSert"></strong></h5><p><i class="keterangan">learning certificate</i></p></div></section><section class="btn-group"><button class="custom-btn p-2 active" id="portofolioButton" type="submit">Portofolio</button> <button class="custom-btn p-2" id="skillsButton" type="submit">Skills</button> <button class="custom-btn p-2" id="productButton" type="submit">Product</button></section></section><section class="output" id="output"></section></main><script>window.onload = function() {
+      printPortofolio()
+      setTimeout(function() {
+        let typed = new Typed('.typing', {
+          strings: ['Front End Web Developer.','Back End Web Developer.','Full Stack Web Developer.','Content Creator.'],
+          delay: 1000,
+          typeSpeed: 60,
+          backSpeed: 30,
+          loop: true,
+        });
+        let mohSolehuddin = new Typed('.MOH-SOLEHUDDIN', {
+        strings: ['MSYTC','MOH. SOLEHUDDIN'],
+        startDelay: 900,
+        typeSpeed: 90,
+        backSpeed: 200,
+        });
+      }, 400);
+      const portfolioButton = document.getElementById('portofolioButton');
+      const productButton = document.getElementById('productButton');
+      const skillsButton = document.getElementById('skillsButton');
+      portfolioButton.addEventListener('click', () => {
+      portfolioButton.classList.add('active');
+      productButton.classList.remove('active');
+      skillsButton.classList.remove('active');
+      printPortofolio();
+    });
+    
+    productButton.addEventListener('click', () => {
+      productButton.classList.add('active');
+      portfolioButton.classList.remove('active');
+      skillsButton.classList.remove('active');
+      printProduct();
+    });
+    
+    const containers = document.querySelectorAll('.container-img-sertificat');
+
+  containers.forEach(container => {
+    container.addEventListener('click', () => {
+      if (container.children.length === 1) {
+        container.style.backgroundColor = 'pink';
+      }
+    });
+  });
+    
+    skillsButton.addEventListener('click', () => {
+      skillsButton.classList.add('active');
+      portfolioButton.classList.remove('active');
+      productButton.classList.remove('active');
+      showSertificat();
+    });
+    let imgCard = document.querySelectorAll(".img-card");
+    let showPortofolio = document.querySelectorAll(".show-portofolio");
+      // Semua aset telah berhasil diunduh, sembunyikan loading
+      animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group', '.container-my-card']);
+      document.getElementById("complete-project").innerHTML = portofolio.length;
+      document.getElementById("countSert").innerHTML = sertifikats.items.length;
+      exp();
+      hideLoading();
+    };</script></html>
