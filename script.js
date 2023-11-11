@@ -1,24 +1,22 @@
 // simulasi data api
 const product = [
   {
-    img: "",
-    title: "Paket Silver",
-    keterangan: "silver"
+    img: "property/solehuddin.png",
+    title: "Basic Bundle",
+    keterangan: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem, delectus quasi quae numquam magnam rerum reiciendis cumque. Voluptatum perferendis facere, autem! Incidunt doloremque ab, fugiat laudantium quasi aut optio.",
+    price: "Rp. 1.000.000 - 5.000.000"
   },
   {
-    img: "",
-    title: "Paket Gold",
-    keterangan: "Gold"
+    img: "property/solehuddin.png",
+    title: "Premium Bundle",
+    keterangan: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem, delectus quasi quae numquam magnam rerum reiciendis cumque. Voluptatum perferendis facere, autem! Incidunt doloremque ab, fugiat laudantium quasi aut optio.",
+    price: "Rp. 5.000.000 - 10.000.000"
   },
   {
-    img: "",
-    title: "Paket Premium",
-    keterangan: "Premium"
-  },
-  {
-    img: "",
-    title: "Paket Diamond",
-    keterangan: "Diamond"
+    img: "property/solehuddin.png",
+    title: "Special Bundle",
+    keterangan: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem, delectus quasi quae numquam magnam rerum reiciendis cumque. Voluptatum perferendis facere, autem! Incidunt doloremque ab, fugiat laudantium quasi aut optio.",
+    price: "Rp. 10.000.000 +"
   },
   ]
 const portofolio = [
@@ -107,7 +105,7 @@ function exp(){
     hasilTahun *=12;
     hasilBulan = to.getMonth()+1;
     hasil = Math.floor((hasilTahun-9 + hasilBulan)/12);
-    document.getElementById("exp").innerHTML = `${hasil}+`;
+    document.getElementById("exp").innerHTML = `${hasil}`;
   }
 }
 
@@ -166,30 +164,28 @@ function printPortofolio() {
 
 function printProduct() {
   showLoading();
-  let result = `<section id="my-product" class="container d-flex justify-content-around">
-    <h1 class="text-primary text-center" style="font-family: 'Kdam Thmor Pro', sans-serif;">PRODUK</h1>`;
+  let result = `
+  <section class="container-product">
+    <div class="title-container-product">
+      <h3>product</h3>
+    </div>
+    <div class="container-product-item">`;
   let output = document.getElementById("output");
   for (let i in product) {
     result+= `
-    <div class="m-auto row mb-5 mt-5 justify-content-evenly text-center product${i}" id="productId">
-      <div class="col-sm-6">
-        <div class=" my-card mt-5 mb-5">
-          <img src="${product[i].img}property/solehuddin.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">${product[i].title}</h5>
-            <p class="card-text">
-              ${product[i].keterangan}
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
+    <div class="product-item">
+        <h3 class="title">${product[i].title}</h3>
+        <img src="${product[i].img}" alt="img product">
+        <p>${product[i].keterangan}</p>
+        <p class="price">${product[i].price}</p>
+        <a href="https://wa.me/6283849079619" class="product-button" id="basic">order</a>
       </div>
-      <hr/>
-    
     `
   }
   hideLoading();
-  output.innerHTML = `${result}</section>`;
+  result += `</div>
+  </section>`
+  output.innerHTML = result;
 }
 
 function animationScrollReveal(delayValue, array) {
