@@ -4,6 +4,7 @@
   --bc: #7743DB;
   --sc: #212121;
   --bg-color:#e8e8e8 ;
+  --white:#efefef;
   --text-color: #072541;
   /*size */
   --small-size: 10px;
@@ -372,7 +373,8 @@ body{
 }
 .product-item{
   width: 350px;
-  border: .1px solid var(--text-color);
+  background-color: var(--white);
+  /* border: .1px solid var(--text-color); */
   padding: var(--large-size);
   border-radius: 1rem;
 }
@@ -393,7 +395,44 @@ body{
   padding: var(--small-size) var(--large-size);
   border-radius: var(--small-size);
 }
+.container-skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  gap: var(--normal-size);
+}
+.skill-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+.skill{
+  border-radius: 1rem;
+  background-color: var(--white);
+  width: 45%;
+  padding: var(--large-size);
+  min-height: 300px;
+}
+ul,li{
+  padding: 0;
+}
+.skill ul li{
+  list-style: none;
+}
 
+.skill ul li a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+.skill ul li a:hover{
+  color: var(--sc);
+}
 /** Responsive**/
 @media screen and (max-width: 420px){
   :root{

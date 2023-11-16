@@ -101,7 +101,7 @@ const portofolio = [
     link: "https://konversi-angka.vercel.app"
   },
 ];
-const sertifikats = {
+const certificate = {
   items: [
     {
       title: "HTML - alwaysngoding.com",
@@ -186,6 +186,185 @@ const sertifikats = {
     },
   ]
 }
+const programmingSkillSet = {
+  items: [
+    {
+      title: "Vanilla",
+      skill: [
+        {
+          title: "HTML",
+          documentation: "https://",
+          certificate: "sertifikat/html.pdf",
+        },
+        {
+          title: "CSS",
+          documentation: "https://",
+          certificate: "sertifikat/css.pdf",
+        },
+        {
+          title: "JavaScript",
+          documentation: "https://",
+          certificate: "sertifikat/js.pdf",
+        },
+        {
+          title: "PHP",
+          documentation: "https://",
+          certificate: "sertifikat/php.pdf",
+        },
+        {
+          title: "MySql",
+          documentation: "https://",
+          certificate: "sertifikat/MySql.pdf",
+        },
+        {
+          title: "Python",
+          documentation: "https://",
+          certificate: "sertifikat/py.pdf",
+        },
+        {
+          title: "NodeJS",
+          documentation: "https://",
+          certificate: "sertifikat/node.pdf",
+        },
+      ]
+    },
+    {
+      title: "Frame Work & Library",
+      skill: [
+        {
+          title: "ReactJs",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "TailwindCss",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "Jquery",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "Boostrap",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "ScrollReveal",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "AOS",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "typed.js",
+          documentation: "https://",
+          certificate: null,
+        },
+      ]
+    },
+    {
+      title: "Tools",
+      skill: [
+        {
+          title: "Webpack",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "get Waves",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "ofucate",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "convertio",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "svg repo",
+          documentation: "https://",
+          certificate: null,
+        },
+        {
+          title: "blob",
+          documentation: "https://",
+          certificate: null,
+        },
+        ]
+    },
+    {
+      title: "Knowlage Of Cyber Security Topic",
+      skill: [
+        {
+         title: "sosial engginering",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "Phising",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "Smising",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "XXS",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "JavaScript Injection",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "Sql Injection",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "MITM",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "Brutforce",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "Trojan",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "BackDoor",
+          documentation: "#",
+          certificate: null, 
+        },
+        {
+         title: "Reverse engginering",
+          documentation: "#",
+          certificate: null, 
+        },
+        ]
+    }
+  ]
+}
 // loading function
 // Untuk menampilkan loading
 function showLoading() {
@@ -211,34 +390,34 @@ function exp(){
 }
 
 // function untuk memperlihatkan sertifikat
-function showSertificat() {
+function showSkillSet() {
   showLoading();
-  let result = `<section class="container-sertificats">
-    <h3 class="sertifikat text-center">sertifikat</h3>`;
-  
+  let result = `<section class="container-skills">
+    <h3>programming skills set</h3>
+    <section class="skill-set">
+  `;
   // Menggunakan forEach untuk mengulang melalui array 'sertifikat.items'
-  sertifikats.items.forEach(element => {
+  programmingSkillSet.items.forEach(element => {
     result += `
-      <div class="container-sertificat-items mb-5">
-        <h3 class="title-sertificat">
-          ${element.title}
-        </h3>
-        <div class="container-img-sertificat">
+    <div class="skill">
+      <h3 class="skill-title">${element.title}</h3>
+        <ul>
     `;
-    
     // Menggunakan forEach untuk mengulang melalui array 'element.img'
-    element.img.forEach(imgElement => {
-      result += `
-        <div class="img-sertificat" style="background-image: url('${imgElement}');"></div>
-      `;
+    element.skill.forEach(element => {
+      if (element.certificate === null) {
+        result += `
+          <li class="skillItem"><a href="${element.documentation}">${element.title}</a></li>`;
+      } else {
+        result += `
+          <li class="skillItem"><a href="${element.certificate}" download="certificate-${element.title}.pdf">${element.title}</a></li>`;
+      }
     });
-    result += `
-        </div>
-      </div>
-    `;
+    result += `</div>`;
   });
-  result += `</section>`;
+  result += ` </section></section>`;
   hideLoading();
+  console.log(result);
   // Pastikan ada elemen dengan ID "OutputSertifikat" di HTML untuk menampilkan hasil
   document.getElementById("output").innerHTML = result;
   setDynamicBackgroundColor();

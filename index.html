@@ -97,41 +97,6 @@
     <section class="output" id="output">
     </section>
   </main>
-  
-  <!-- preload img -->
-  <img src="./sertifikat/html/html.webp" alt="preload" class="preloadImg">
-  
-  <img src="./sertifikat/css/css.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/js/js.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/js/js2.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/js/js3.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/jsAlways/js.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/py/py.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/BE/BE.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/BE/BE2.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/aws/aws.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/aws/aws2.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/aws/aws3.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/php/php.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/mysql/mysql.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/visualisasiData/1.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/visualisasiData/2.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/memulaiDasarPemrograman/1.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/memulaiDasarPemrograman/2.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/memulaiDasarPemrograman/3.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/memulaiDasarPemrograman/4.webp" alt="preload img" class="preloadImg">
-  
-  <img src="./sertifikat/logikaPemrograman/1.webp" alt="preload img" class="preloadImg">
-  <img src="./sertifikat/logikaPemrograman/2.webp" alt="preload img" class="preloadImg">
   <!-- Setup library typing -->
   <script>
     window.onload = function() {
@@ -171,7 +136,7 @@
       skillsButton.classList.add('active');
       portfolioButton.classList.remove('active');
       productButton.classList.remove('active');
-      showSertificat();
+      showSkillSet();
     });
     
     const containers = document.querySelectorAll('.container-img-sertificat');
@@ -185,7 +150,7 @@
     /* run function */
       animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group', '.container-my-card']);
       document.getElementById("complete-project").innerHTML = portofolio.length;
-      document.getElementById("countSert").innerHTML = sertifikats.items.length;
+      document.getElementById("countSert").innerHTML = certificate.items.length;
       exp();
       hideLoading();
     };
