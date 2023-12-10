@@ -150,7 +150,7 @@
     /* run function */
       animationScrollReveal(100, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.btn-group', '.container-my-card']);
       document.getElementById("complete-project").innerHTML = portofolio.length;
-      document.getElementById("countSert").innerHTML = certificate.items.length;
+      document.getElementById("countSert").innerHTML = programmingSkillSet.items[programmingSkillSet.items.length-1].skill.length;
       exp();
       hideLoading();
     };

@@ -433,6 +433,11 @@ ul,li{
 .skill ul li a:hover{
   color: var(--sc);
 }
+.skillItem.download{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
 /** Responsive**/
 @media screen and (max-width: 420px){
   :root{

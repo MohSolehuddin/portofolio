@@ -101,91 +101,6 @@ const portofolio = [
     link: "https://konversi-angka.vercel.app"
   },
 ];
-const certificate = {
-  items: [
-    {
-      title: "HTML - alwaysngoding.com",
-      img: [
-        "sertifikat/html/html.webp",
-        ]
-    },
-    {
-      title: "CSS - alwaysngoding.com",
-      img: [
-        "sertifikat/css/css.webp",
-        ]
-    },
-    {
-      title: "JavaScript - alwaysngoding.com",
-      img: [
-        "sertifikat/jsAlways/js.webp",
-        ]
-    },
-    {
-      title: "PHP - alwaysngoding.com",
-      img: [
-        "sertifikat/php/php.webp",
-        ]
-    },
-    {
-      title: "MySql - alwaysngoding.com",
-      img: [
-        "sertifikat/mysql/mysql.webp",
-        ]
-    },
-    {
-      title: "Fundamental Python",
-      img: [
-        "sertifikat/py/py.webp",
-        ]
-    },
-    {
-      title: "Logika Pemrogramman - dicoding.com",
-      img: [
-        "sertifikat/logikaPemrograman/1.webp",
-        "sertifikat/logikaPemrograman/2.webp",
-        ]
-    },
-    {
-      title: "MySql - dicoding.com",
-      img: [
-        "sertifikat/memulaiDasarPemrograman/1.webp",
-        "sertifikat/memulaiDasarPemrograman/2.webp",
-        "sertifikat/memulaiDasarPemrograman/3.webp",
-        "sertifikat/memulaiDasarPemrograman/4.webp",
-        ]
-    },
-    {
-      title: "Visualisasi Data - dicoding.com",
-      img: [
-        "sertifikat/visualisasiData/1.webp",
-        "sertifikat/visualisasiData/2.webp",
-        ]
-    },
-    {
-      title: "JavaScript",
-      img: [
-        "sertifikat/js/js.webp",
-        "sertifikat/js/js2.webp",
-        "sertifikat/js/js3.webp",
-        ]
-    },
-    {
-      title: "AWS (Amazon Web Service)",
-      img: [
-        "sertifikat/aws/aws.webp",
-        "sertifikat/aws/aws2.webp",
-        ]
-    },
-    {
-      title: "JavaScript (NodeJS - Back End Dev)",
-      img: [
-        "sertifikat/BE/BE.webp",
-        "sertifikat/BE/BE2.webp",
-        ]
-    },
-  ]
-}
 const programmingSkillSet = {
   items: [
     {
@@ -193,38 +108,38 @@ const programmingSkillSet = {
       skill: [
         {
           title: "HTML",
-          documentation: "https://",
+          documentation: "https://devdocs.io/html",
           certificate: "sertifikat/html.pdf",
         },
         {
           title: "CSS",
-          documentation: "https://",
+          documentation: "https://devdocs.io/css",
           certificate: "sertifikat/css.pdf",
         },
         {
           title: "JavaScript",
-          documentation: "https://",
+          documentation: "https://devdocs.io/javascript",
           certificate: "sertifikat/js.pdf",
         },
         {
           title: "PHP",
-          documentation: "https://",
+          documentation: "https://devdocs.io/php",
           certificate: "sertifikat/php.pdf",
         },
         {
           title: "MySql",
-          documentation: "https://",
+          documentation: "https://devdocs.io/mysql",
           certificate: "sertifikat/MySql.pdf",
         },
         {
           title: "Python",
-          documentation: "https://",
+          documentation: "https://devdocs.io/python",
           certificate: "sertifikat/py.pdf",
         },
         {
           title: "NodeJS",
-          documentation: "https://",
-          certificate: "sertifikat/node.pdf",
+          documentation: "https://nodejs.org",
+          certificate: "sertifikat/nodejs.pdf",
         },
       ]
     },
@@ -233,37 +148,37 @@ const programmingSkillSet = {
       skill: [
         {
           title: "ReactJs",
-          documentation: "https://",
+          documentation: "https://dev.reactjs.com",
           certificate: null,
         },
         {
           title: "TailwindCss",
-          documentation: "https://",
+          documentation: "https://tailwindcss.com",
           certificate: null,
         },
         {
           title: "Jquery",
-          documentation: "https://",
+          documentation: "https://jquery.com",
           certificate: null,
         },
         {
           title: "Boostrap",
-          documentation: "https://",
+          documentation: "https://boostrap.com",
           certificate: null,
         },
         {
           title: "ScrollReveal",
-          documentation: "https://",
+          documentation: "https://ScrollReveal.com",
           certificate: null,
         },
         {
           title: "AOS",
-          documentation: "https://",
+          documentation: "https://aos.io",
           certificate: null,
         },
         {
           title: "typed.js",
-          documentation: "https://",
+          documentation: "https://typedjs.io",
           certificate: null,
         },
       ]
@@ -273,32 +188,32 @@ const programmingSkillSet = {
       skill: [
         {
           title: "Webpack",
-          documentation: "https://",
+          documentation: "https://webpack.io",
           certificate: null,
         },
         {
           title: "get Waves",
-          documentation: "https://",
+          documentation: "https://getwaves.io",
           certificate: null,
         },
         {
-          title: "ofucate",
-          documentation: "https://",
+          title: "obfuscate",
+          documentation: "https://obfuscatejs.io",
           certificate: null,
         },
         {
           title: "convertio",
-          documentation: "https://",
+          documentation: "https://convertio.io",
           certificate: null,
         },
         {
           title: "svg repo",
-          documentation: "https://",
+          documentation: "https://svgrepo.io",
           certificate: null,
         },
         {
           title: "blob",
-          documentation: "https://",
+          documentation: "https://blob.io",
           certificate: null,
         },
         ]
@@ -362,6 +277,61 @@ const programmingSkillSet = {
           certificate: null, 
         },
         ]
+    },
+    {
+      title: "skill bersertifikat",
+      skill:[
+        {
+          title: "HTML",
+          documentation: "#",
+          certificate: "sertifikat/html.pdf",
+        },
+        {
+          title: "CSS",
+          documentation: "#",
+          certificate: "sertifikat/css.pdf",
+        },
+        {
+          title: "JavaScript",
+          documentation: "#",
+          certificate: "sertifikat/JavaScript.pdf",
+        },
+        {
+          title: "Python",
+          documentation: "#",
+          certificate: "sertifikat/py.pdf",
+        },
+        {
+          title: "PHP",
+          documentation: "#",
+          certificate: "sertifikat/php.pdf",
+        },
+        {
+          title: "MySql",
+          documentation: "#",
+          certificate: "sertifikat/mysql.pdf",
+        },
+        {
+          title: "AWS",
+          documentation: "#",
+          certificate: "sertifikat/aws.pdf",
+        },
+        {
+          title: "Nodejs",
+          documentation: "#",
+          certificate: "sertifikat/nodejs.pdf",
+        },
+        {
+          title: "Logika Pemrogramman",
+          documentation: "#",
+          certificate: "sertifikat/logikaPemrogramman.pdf",
+        },
+        {
+          title: "Visualisasi Data",
+          documentation: "#",
+          certificate: "sertifikat/visualisasiData.pdf",
+        },
+        ]
     }
   ]
 }
@@ -410,7 +380,10 @@ function showSkillSet() {
           <li class="skillItem"><a href="${element.documentation}">${element.title}</a></li>`;
       } else {
         result += `
-          <li class="skillItem"><a href="${element.certificate}" download="certificate-${element.title}.pdf">${element.title}</a></li>`;
+          <li class="skillItem download">
+          <a href="${element.documentation}">${element.title}</a>
+          <a href="${element.certificate}" download="certificate-${element.title}.pdf"><img src="./icon/file-download.svg" alt="download" /></a>
+          </li>`;
       }
     });
     result += `</div>`;
