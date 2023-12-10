@@ -294,7 +294,7 @@ const programmingSkillSet = {
         {
           title: "JavaScript",
           documentation: "#",
-          certificate: "sertifikat/JavaScript.pdf",
+          certificate: "sertifikat/js.zip",
         },
         {
           title: "Python",
@@ -314,17 +314,27 @@ const programmingSkillSet = {
         {
           title: "AWS",
           documentation: "#",
-          certificate: "sertifikat/aws.pdf",
+          certificate: "sertifikat/dasarAws.pdf",
         },
         {
           title: "Nodejs",
           documentation: "#",
-          certificate: "sertifikat/nodejs.pdf",
+          certificate: "sertifikat/backEnd-nodejs.pdf",
         },
         {
-          title: "Logika Pemrogramman",
+          title: "Programming Logic",
           documentation: "#",
           certificate: "sertifikat/logikaPemrogramman.pdf",
+        },
+        {
+          title: "Fundamental Programming",
+          documentation: "#",
+          certificate: "sertifikat/dasarPemrogramman.pdf",
+        },
+        {
+          title: "Fundamental Web Programming",
+          documentation: "#",
+          certificate: "sertifikat/dasarWeb.pdf",
         },
         {
           title: "Visualisasi Data",
@@ -382,7 +392,7 @@ function showSkillSet() {
         result += `
           <li class="skillItem download">
           <a href="${element.documentation}">${element.title}</a>
-          <a href="${element.certificate}" download="certificate-${element.title}.pdf"><img src="./icon/file-download.svg" alt="download" /></a>
+          <a href="${element.certificate}" download="certificate-${element.certificate}"><img src="./icon/file-download.svg" alt="download" /></a>
           </li>`;
       }
     });
