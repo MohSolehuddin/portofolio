@@ -119,7 +119,7 @@ const programmingSkillSet = {
         {
           title: "JavaScript",
           documentation: "https://devdocs.io/javascript",
-          certificate: "sertifikat/js.pdf",
+          certificate: "sertifikat/js.zip",
         },
         {
           title: "PHP",
@@ -139,7 +139,7 @@ const programmingSkillSet = {
         {
           title: "NodeJS",
           documentation: "https://nodejs.org",
-          certificate: "sertifikat/nodejs.pdf",
+          certificate: "sertifikat/backEnd-nodejs.pdf",
         },
       ]
     },
