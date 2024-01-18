@@ -3,20 +3,26 @@ const product = [
   {
     img: "property/solehuddin.png",
     title: "Basic Bundle",
-    keterangan: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem, delectus quasi quae numquam magnam rerum reiciendis cumque. Voluptatum perferendis facere, autem! Incidunt doloremque ab, fugiat laudantium quasi aut optio.",
-    price: "Rp. 1.000.000 - 5.000.000"
+    keterangan: "Website simple dan statis dengan fitur yang tidak begitu banyak.",
+    price: "Rp. 1.000.000 - 4.999.999"
   },
   {
     img: "property/solehuddin.png",
     title: "Premium Bundle",
-    keterangan: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem, delectus quasi quae numquam magnam rerum reiciendis cumque. Voluptatum perferendis facere, autem! Incidunt doloremque ab, fugiat laudantium quasi aut optio.",
-    price: "Rp. 5.000.000 - 10.000.000"
+    keterangan: "Website dinamis dengan fitur yang cukup banyak serta include dengan database.",
+    price: "Rp. 5.000.000 - 9.999.999"
   },
   {
     img: "property/solehuddin.png",
     title: "Special Bundle",
-    keterangan: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatem, delectus quasi quae numquam magnam rerum reiciendis cumque. Voluptatum perferendis facere, autem! Incidunt doloremque ab, fugiat laudantium quasi aut optio.",
+    keterangan: "Website dengan kompleksitas tinggi dan juga dinamis serta fitur yang banyak.",
     price: "Rp. 10.000.000 +"
+  },
+  {
+    img: "property/solehuddin.png",
+    title: "Special Bundle",
+    keterangan: "Website untuk biodata kelas, statis dengan fitur seadanya.",
+    price: "Rp. 600.000"
   },
   ]
 const portofolio = [

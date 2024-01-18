@@ -274,13 +274,13 @@ body{
   background-color: transparent;
   border: none;
   width: 140px;
-  border-radius: 5px;
   height: var(--normal-size);
   color: var(--bg-color);
   font-weight: bold;
 }
 .custom-btn:hover{
-  border: 1px solid var(--text-color) ;
+  position: relative;
+  top: 1px;
 }
 #skillsButton{
   margin: 0 var(--small-size);
