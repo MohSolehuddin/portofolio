@@ -234,7 +234,8 @@ body {
 .img-card {
   z-index: 1;
   position: relative;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 /* judul dari kartu */
 .my-card .title-card {
