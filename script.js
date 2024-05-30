@@ -32,7 +32,7 @@ const portofolio = [
   {
     title: "Password management",
     img: "property/pwmg.jpg",
-    link: "https://konversi-angka.vercel.app",
+    link: "https://github.com/MohSolehuddin/PwMg",
   },
   {
     title: "Number Convertion",
