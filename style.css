@@ -235,7 +235,7 @@ body {
   z-index: 1;
   position: relative;
   max-width: 100%;
-  height: auto;
+  height: 300px;
 }
 /* judul dari kartu */
 .my-card .title-card {
