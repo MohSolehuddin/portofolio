@@ -37,7 +37,7 @@ const portofolio = [
   {
     title: "Number Convertion",
     img: "property/math_convertion.jpg",
-    link: "https://github.com/MohSolehuddin/",
+    link: "https://konversi-angka.vercel.app",
   },
   {
     title: "Pesan rahsia",
