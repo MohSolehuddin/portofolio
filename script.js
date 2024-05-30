@@ -37,27 +37,27 @@ const portofolio = [
   {
     title: "Number Convertion",
     img: "property/math_convertion.jpg",
-    link: "https://konversi-angka.vercel.app",
+    link: "https://github.com/MohSolehuddin/",
   },
   {
     title: "Pesan rahsia",
     img: "property/secret-1142327_640.jpg",
-    link: "https://konversi-angka.vercel.app",
+    link: "https://github.com/MohSolehuddin/pesanRahasia",
   },
   {
     title: "Number Convertion",
     img: "/property/laptop.jpg",
-    link: "https://konversi-angka.vercel.app",
+    link: "https://github.com/MohSolehuddin/",
   },
   {
     title: "Number Convertion",
     img: "property/jam.jpg",
-    link: "https://konversi-angka.vercel.app",
+    link: "https://github.com/MohSolehuddin/",
   },
   {
     title: "Number Convertion",
     img: "property/computer_gembok.jpg",
-    link: "https://konversi-angka.vercel.app",
+    link: "https://github.com/MohSolehuddin/",
   },
 ];
 const programmingSkillSet = {
