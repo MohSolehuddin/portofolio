@@ -1,10 +1,10 @@
 /* variable */
-:root{
+:root {
   /* color */
-  --bc: #7743DB;
+  --bc: #7743db;
   --sc: #212121;
-  --bg-color:#e8e8e8 ;
-  --white:#efefef;
+  --bg-color: #e8e8e8;
+  --white: #efefef;
   --text-color: #072541;
   /*size */
   --small-size: 10px;
@@ -13,28 +13,32 @@
   --big-size: 60px;
 }
 /* reset semua element */
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
+  box-sizing: border-box;
   color: var(--text-color);
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
   font-size: var(--big-font-size);
 }
-h4,h5,h6{
+h4,
+h5,
+h6 {
   font-size: var(--normal-font-size);
 }
-.preloadImg{
+.preloadImg {
   width: 100%;
   display: none;
 }
 /* jarak dari konten btn */
-#output{
+#output {
   margin-top: var(--normal-size);
 }
 /* konfigurasi loading */
-.loading-container{
+.loading-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +68,7 @@ h4,h5,h6{
   background-color: #fff;
   left: 15%;
   transform-origin: 50%;
-  animation: circle7124 .5s alternate infinite ease;
+  animation: circle7124 0.5s alternate infinite ease;
 }
 
 @keyframes circle7124 {
@@ -88,27 +92,27 @@ h4,h5,h6{
 
 .circle:nth-child(2) {
   left: 45%;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .shadow {
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 62px;
   transform-origin: 50%;
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  animation: shadow046 .5s alternate infinite ease;
+  animation: shadow046 0.5s alternate infinite ease;
 }
 
 @keyframes shadow046 {
@@ -118,73 +122,73 @@ h4,h5,h6{
 
   40% {
     transform: scaleX(1);
-    opacity: .7;
+    opacity: 0.7;
   }
 
   100% {
-    transform: scaleX(.2);
-    opacity: .4;
+    transform: scaleX(0.2);
+    opacity: 0.4;
   }
 }
 
 .shadow:nth-child(4) {
   left: 45%;
-  animation-delay: .2s
+  animation-delay: 0.2s;
 }
 
 .shadow:nth-child(5) {
   left: auto;
   right: 15%;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 /* body style */
-body{
+body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: var(--bg-color);
 }
 /* Profil */
-.Profil{
+.Profil {
   background-color: var(--bg-color);
 }
 /* logo Profil */
-.Profil img.logo{
+.Profil img.logo {
   width: 150px;
   height: 150px;
   border-radius: 1rem;
 }
-.margin-custom{
+.margin-custom {
   display: relative;
   margin-top: -170px;
 }
-#my-product{
+#my-product {
   margin-top: var(--normal-size);
   flex-direction: column;
 }
-.Profil div{
- position: relative;
- z-index: 0;
+.Profil div {
+  position: relative;
+  z-index: 0;
 }
 /* blob decoration */
-.profil-blob{
+.profil-blob {
   transform: rotate(-18deg);
 }
 /* title dan gelar */
 #profesi {
-  color : var(--sc);
+  color: var(--sc);
 }
 /* nama pemilik */
-.MOH-SOLEHUDDIN{
+.MOH-SOLEHUDDIN {
   color: var(--bc);
 }
 /* tentang saya */
-.aboutMe{
+.aboutMe {
   width: 90vw;
   margin: auto;
 }
 /* setiap bagian tentang saya */
-.aboutMe div{
+.aboutMe div {
   width: 110px;
   background-color: var(--bg-color);
   display: flex;
@@ -193,7 +197,7 @@ body{
   flex-direction: column;
   margin: var(--small-size) 2px;
 }
-.aboutMe .more a{
+.aboutMe .more a {
   color: var(--text-color);
 }
 /* link media sosial */
@@ -201,17 +205,17 @@ body{
   margin: 0 var(--small-size);
 }
 /* pembungkus kartu */
-.container-my-card{
+.container-my-card {
   margin: auto;
   display: flex;
   gap: var(--normal-size);
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
   width: 80vw;
 }
 /* judul keseluruhan kartu */
-.title-group-card{
+.title-group-card {
   width: 100%;
 }
 /* judul per kartu */
@@ -242,35 +246,35 @@ body{
   padding: 15px;
   position: relative;
   z-index: 2;
-  background: linear-gradient(170deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,.8));
+  background: linear-gradient(170deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
 }
 /* efek ketika pembungkus di hover */
-.my-card:hover > .img-card + .title-card{
+.my-card:hover > .img-card + .title-card {
   transform: translateY(-300px);
-  transition: all .8s cubic-bezier(.1, 1.5 , .3, 1.01);
+  transition: all 0.8s cubic-bezier(0.1, 1.5, 0.3, 1.01);
 }
 /* tombol link ke website yang pernah saya buat */
-.my-card .title-card .show-portofolio{
+.my-card .title-card .show-portofolio {
   padding: var(--small-size) var(--large-size);
   border-radius: 1rem;
   color: var(--bc);
   text-decoration: none;
   background-color: var(--bg-color);
 }
-.my-card .title-card .show-portofolio:hover{
-  transition: all .3s cubic-bezier(.1, .5 , .3, .1);
+.my-card .title-card .show-portofolio:hover {
+  transition: all 0.3s cubic-bezier(0.1, 0.5, 0.3, 0.1);
   border: 1px solid var(--bc);
   background-color: var(--bc);
   color: var(--bg-color);
 }
 /* button */
-.btn-group{
-  padding: .5rem;
+.btn-group {
+  padding: 0.5rem;
   background-color: var(--bc);
   border-radius: 1rem;
   margin: auto;
 }
-.custom-btn{
+.custom-btn {
   background-color: transparent;
   border: none;
   width: 140px;
@@ -278,27 +282,27 @@ body{
   color: var(--bg-color);
   font-weight: bold;
 }
-.custom-btn:hover{
+.custom-btn:hover {
   position: relative;
   top: 1px;
 }
-#skillsButton{
+#skillsButton {
   margin: 0 var(--small-size);
 }
 /* jika tombol di tekan */
-.active{
-  transition: .3s;
+.active {
+  transition: 0.3s;
   background-color: var(--bg-color);
   color: var(--bc);
   border-radius: var(--small-size);
 }
 /* media sosial */
-.medsos{
+.medsos {
   margin: var(--large-size) 0;
 }
 /** ANIMATION AND Effect **/
-.textRainbow{
-  background-image: linear-gradient(340deg, var(--bc),var(--sc));
+.textRainbow {
+  background-image: linear-gradient(340deg, var(--bc), var(--sc));
   background-clip: border-box;
   background-clip: text;
   -webkit-background-clip: text;
@@ -306,28 +310,29 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
-.keterangan{
+.keterangan {
   font-size: 13px;
 }
 /* sertifikat */
-.container-sertificats{
+.container-sertificats {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 90vw;
 }
-.sertifikat,.title-sertificat{
+.sertifikat,
+.title-sertificat {
   color: var(--text-color);
 }
-.title-sertificat{
+.title-sertificat {
   padding-bottom: var(--large-size);
   padding-top: var(--normal-size);
 }
-.container-sertificats-item{
+.container-sertificats-item {
   width: 100%;
   margin: auto;
 }
-.container-img-sertificat{
+.container-img-sertificat {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
@@ -338,56 +343,55 @@ body{
   border-radius: 1rem;
   background-color: var(--bc);
 }
-.container-img-sertificat.single-item{
+.container-img-sertificat.single-item {
   margin: auto;
   width: 80vw;
   height: 53.3334vw;
 }
-.img-sertificat{
+.img-sertificat {
   flex: 1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 100%;
   border-radius: 1rem;
-  transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
-.img-sertificat:hover{
+.img-sertificat:hover {
   flex: 5.5;
 }
-.container-product{
+.container-product {
   width: 90vw;
   margin: auto;
 }
-.title-container-product{
+.title-container-product {
   text-align: center;
 }
-.container-product-item{
+.container-product-item {
   display: flex;
   justify-content: space-around;
   text-align: justify;
   flex-wrap: wrap;
   gap: 1rem;
 }
-.container-product-item p{
+.container-product-item p {
   margin-top: var(--large-size);
 }
-.product-item{
+.product-item {
   width: 350px;
   background-color: var(--white);
   /* border: .1px solid var(--text-color); */
   padding: var(--large-size);
   border-radius: 1rem;
 }
-.product-item h3{
+.product-item h3 {
   text-align: center;
   margin-bottom: var(--large-size);
-  
 }
-.product-item img{
+.product-item img {
   width: 100%;
   border-radius: 1rem;
 }
-.product-item a{
+.product-item a {
   color: var(--bg-color);
   background-color: var(--bc);
   text-decoration: none;
@@ -395,7 +399,7 @@ body{
   padding: var(--small-size) var(--large-size);
   border-radius: var(--small-size);
 }
-.container-skills{
+.container-skills {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,7 +408,7 @@ body{
   margin: auto;
   gap: var(--normal-size);
 }
-.skill-set{
+.skill-set {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,101 +416,103 @@ body{
   gap: 2rem;
   width: 100%;
 }
-.skill{
+.skill {
   border-radius: 1rem;
   background-color: var(--white);
   width: 45%;
   padding: var(--large-size);
   min-height: 300px;
 }
-ul,li{
+ul,
+li {
   padding: 0;
 }
-.skill ul li{
+.skill ul li {
   list-style: none;
 }
 
-.skill ul li a{
+.skill ul li a {
   color: var(--text-color);
   text-decoration: none;
 }
-.skill ul li a:hover{
+.skill ul li a:hover {
   color: var(--sc);
 }
-.skillItem.download{
+.skillItem.download {
   display: flex;
   width: 80%;
   justify-content: space-between;
 }
 /** Responsive**/
-@media screen and (max-width: 420px){
-  :root{
+@media screen and (max-width: 420px) {
+  :root {
     /* font size */
-  --small-font-size: .7rem ;
-  --normal-font-size: .85rem ;
-  --big-font-size: 1.1rem ;
+    --small-font-size: 0.7rem;
+    --normal-font-size: 0.85rem;
+    --big-font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 755px){
-  :root{
+@media screen and (max-width: 755px) {
+  :root {
     /* font size */
-  --small-font-size: .75rem ;
-  --normal-font-size: .9rem ;
-  --big-font-size: 1.2rem ;
+    --small-font-size: 0.75rem;
+    --normal-font-size: 0.9rem;
+    --big-font-size: 1.2rem;
   }
-  .container-img-sertificat{
+  .container-img-sertificat {
     height: 250px;
   }
-  .img-sertificat:hover{
+  .img-sertificat:hover {
     flex: 20;
   }
-  .container-sertificats{
-      width: 90vw;
+  .container-sertificats {
+    width: 90vw;
   }
-  .btn-group{
+  .btn-group {
     display: flex;
     justify-content: space-between;
-    gap: .5rem;
+    gap: 0.5rem;
     flex: 1;
     width: 90vw;
   }
-  .custom-btn{
+  .custom-btn {
     width: 33.3%;
   }
-  .product-item{
+  .product-item {
     width: 100%;
   }
-  .container-img-sertificat.single-item{
-  margin: auto;
-  width: 90vw;
-  height: 60vw;
+  .container-img-sertificat.single-item {
+    margin: auto;
+    width: 90vw;
+    height: 60vw;
   }
-  .container-my-card{
+  .container-my-card {
     width: 90vw;
   }
   .my-card {
     width: 90vw;
     height: 90vw;
   }
-  .img-card{
+  .img-card {
     height: 90vw;
   }
   .my-card .title-card {
     height: 90vw;
   }
-  .my-card:hover > .img-card + .title-card{
-  transform: translateY(-90vw);
+  .my-card:hover > .img-card + .title-card {
+    transform: translateY(-90vw);
   }
 }
-@media screen and (min-width: 756px){
-  :root{
+@media screen and (min-width: 756px) {
+  :root {
     /* font size */
-  --small-font-size: .8rem ;
-  --normal-font-size: 1rem ;
-  --big-font-size: 1.4rem ;
+    --small-font-size: 0.8rem;
+    --normal-font-size: 1rem;
+    --big-font-size: 1.4rem;
   }
-  .container-sertificats{
-      width: 80vw;
+  .container-sertificats {
+    width: 80vw;
   }
 }
-@media screen and (min-width: 992px){}
+@media screen and (min-width: 992px) {
+}

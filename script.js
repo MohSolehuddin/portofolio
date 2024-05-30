@@ -1,110 +1,63 @@
 // simulasi data api
 const product = [
   {
-    img: "property/solehuddin.png",
+    img: "property/basic_service.webp",
     title: "Basic Bundle",
-    keterangan: "Website simple dan statis dengan fitur yang tidak begitu banyak.",
-    price: "Rp. 1.000.000 - 4.999.999"
+    keterangan:
+      "Website simple dan statis dengan fitur yang tidak begitu banyak.",
+    price: "Rp. 1.000.000 - 4.999.999",
   },
   {
-    img: "property/solehuddin.png",
+    img: "property/dinamis_web_service.webp",
     title: "Premium Bundle",
-    keterangan: "Website dinamis dengan fitur yang cukup banyak serta include dengan database.",
-    price: "Rp. 5.000.000 - 9.999.999"
+    keterangan:
+      "Website dinamis dengan fitur yang cukup banyak serta include dengan database.",
+    price: "Rp. 5.000.000 - 9.999.999",
   },
   {
-    img: "property/solehuddin.png",
+    img: "property/spesial_service.webp",
     title: "Special Bundle",
-    keterangan: "Website dengan kompleksitas tinggi dan juga dinamis serta fitur yang banyak.",
-    price: "Rp. 10.000.000 +"
+    keterangan:
+      "Website dengan kompleksitas tinggi dan juga dinamis serta fitur yang banyak.",
+    price: "Rp. 10.000.000 +",
   },
   {
-    img: "property/solehuddin.png",
+    img: "property/school_service.jpg",
     title: "Special Bundle",
     keterangan: "Website untuk biodata kelas, statis dengan fitur seadanya.",
-    price: "Rp. 600.000"
+    price: "Rp. 600.000",
   },
-  ]
+];
 const portofolio = [
   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "/property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
+    title: "Password management",
+    img: "property/pwmg.jpg",
+    link: "https://konversi-angka.vercel.app",
   },
   {
     title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
+    img: "property/math_convertion.jpg",
+    link: "https://konversi-angka.vercel.app",
   },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "/property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
+  {
+    title: "Pesan rahsia",
+    img: "property/secret-1142327_640.jpg",
+    link: "https://konversi-angka.vercel.app",
   },
   {
     title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "/property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
+    img: "/property/laptop.jpg",
+    link: "https://konversi-angka.vercel.app",
   },
   {
     title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
+    img: "property/jam.jpg",
+    link: "https://konversi-angka.vercel.app",
   },
-   {
+  {
     title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
-  },
-   {
-    title: "Number Convertion",
-    img: "/property/solehuddin.png",
-    link: "https://konversi-angka.vercel.app"
+    img: "property/computer_gembok.jpg",
+    link: "https://konversi-angka.vercel.app",
   },
 ];
 const programmingSkillSet = {
@@ -147,7 +100,7 @@ const programmingSkillSet = {
           documentation: "https://nodejs.org",
           certificate: "sertifikat/backEnd-nodejs.pdf",
         },
-      ]
+      ],
     },
     {
       title: "Frame Work & Library",
@@ -187,7 +140,7 @@ const programmingSkillSet = {
           documentation: "https://typedjs.io",
           certificate: null,
         },
-      ]
+      ],
     },
     {
       title: "Tools",
@@ -222,71 +175,71 @@ const programmingSkillSet = {
           documentation: "https://blob.io",
           certificate: null,
         },
-        ]
+      ],
     },
     {
       title: "Knowlage Of Cyber Security Topic",
       skill: [
         {
-         title: "sosial engginering",
+          title: "sosial engginering",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "Phising",
+          title: "Phising",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "Smising",
+          title: "Smising",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "XXS",
+          title: "XXS",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "JavaScript Injection",
+          title: "JavaScript Injection",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "Sql Injection",
+          title: "Sql Injection",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "MITM",
+          title: "MITM",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "Brutforce",
+          title: "Brutforce",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "Trojan",
+          title: "Trojan",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "BackDoor",
+          title: "BackDoor",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
         {
-         title: "Reverse engginering",
+          title: "Reverse engginering",
           documentation: "#",
-          certificate: null, 
+          certificate: null,
         },
-        ]
+      ],
     },
     {
       title: "skill bersertifikat",
-      skill:[
+      skill: [
         {
           title: "HTML",
           documentation: "#",
@@ -347,30 +300,30 @@ const programmingSkillSet = {
           documentation: "#",
           certificate: "sertifikat/visualisasiData.pdf",
         },
-        ]
-    }
-  ]
-}
+      ],
+    },
+  ],
+};
 // loading function
 // Untuk menampilkan loading
 function showLoading() {
-  const loading = document.getElementById('loading');
-  loading.removeAttribute('hidden');
+  const loading = document.getElementById("loading");
+  loading.removeAttribute("hidden");
 }
 // Untuk menyembunyikan loading
 function hideLoading() {
-  const loading = document.getElementById('loading');
+  const loading = document.getElementById("loading");
   loading.setAttribute("hidden", "true");
 }
 // function experient
-function exp(){
+function exp() {
   let from = new Date("19 September 2021");
   let to = new Date();
-  if (from.getYear()<=to.getYear()){
-    hasilTahun= to.getYear() - from.getYear();
-    hasilTahun *=12;
-    hasilBulan = to.getMonth()+1;
-    hasil = Math.floor((hasilTahun-9 + hasilBulan)/12);
+  if (from.getYear() <= to.getYear()) {
+    hasilTahun = to.getYear() - from.getYear();
+    hasilTahun *= 12;
+    hasilBulan = to.getMonth() + 1;
+    hasil = Math.floor((hasilTahun - 9 + hasilBulan) / 12);
     document.getElementById("exp").innerHTML = `${hasil}`;
   }
 }
@@ -383,14 +336,14 @@ function showSkillSet() {
     <section class="skill-set">
   `;
   // Menggunakan forEach untuk mengulang melalui array 'sertifikat.items'
-  programmingSkillSet.items.forEach(element => {
+  programmingSkillSet.items.forEach((element) => {
     result += `
     <div class="skill">
       <h3 class="skill-title">${element.title}</h3>
         <ul>
     `;
     // Menggunakan forEach untuk mengulang melalui array 'element.img'
-    element.skill.forEach(element => {
+    element.skill.forEach((element) => {
       if (element.certificate === null) {
         result += `
           <li class="skillItem"><a href="${element.documentation}">${element.title}</a></li>`;
@@ -414,10 +367,10 @@ function showSkillSet() {
 
 function printPortofolio() {
   showLoading();
-  let result= `<section class="container-my-card text-center"><h3 class="title-group-card">portofolio</h3>`;
+  let result = `<section class="container-my-card text-center"><h3 class="title-group-card">portofolio</h3>`;
   let output = document.getElementById("output");
   for (let i in portofolio) {
-    result+= `
+    result += `
     <div class="my-card border">
       <img class="img-card" id="img-card" src="${portofolio[i].img}" alt="img card" />
       <div class="title-card">
@@ -425,7 +378,7 @@ function printPortofolio() {
         <a class="show-portofolio" id="show-portofolio" href="${portofolio[i].link}" target="_blank">show</a>
       </div>
     </div>
-    `
+    `;
   }
   hideLoading();
   output.innerHTML = `${result}</section>`;
@@ -441,7 +394,7 @@ function printProduct() {
     <div class="container-product-item">`;
   let output = document.getElementById("output");
   for (let i in product) {
-    result+= `
+    result += `
     <div class="product-item">
         <h3 class="title">${product[i].title}</h3>
         <img src="${product[i].img}" alt="img product">
@@ -449,33 +402,33 @@ function printProduct() {
         <p class="price">${product[i].price}</p>
         <a href="https://wa.me/6283849079619" class="product-button" id="basic">order</a>
       </div>
-    `
+    `;
   }
   hideLoading();
   result += `</div>
-  </section>`
+  </section>`;
   output.innerHTML = result;
 }
 
 function animationScrollReveal(delayValue, array) {
-  const scrollAnimation = ScrollReveal(
-    {origin: 'top',
-    distance: '60px',
+  const scrollAnimation = ScrollReveal({
+    origin: "top",
+    distance: "60px",
     duration: 2500,
     delay: delayValue,
   });
   for (let i in array) {
     delayValue += 100;
-    scrollAnimation.reveal(`${array[i]}`, {delay: delayValue});
+    scrollAnimation.reveal(`${array[i]}`, { delay: delayValue });
   }
 }
 
 // Fungsi untuk menangani warna latar belakang
 function setDynamicBackgroundColor() {
-  const containers = document.querySelectorAll('.container-img-sertificat');
-  containers.forEach(container => {
+  const containers = document.querySelectorAll(".container-img-sertificat");
+  containers.forEach((container) => {
     if (container.children.length === 1) {
-      container.classList.add('single-item');
+      container.classList.add("single-item");
     }
   });
 }
