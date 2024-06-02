@@ -148,6 +148,9 @@ body {
   overflow-x: hidden;
   background-color: var(--bg-color);
 }
+main {
+  margin-bottom: 40px;
+}
 /* Profil */
 .Profil {
   background-color: var(--bg-color);
